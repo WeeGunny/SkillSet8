@@ -1,0 +1,5 @@
+1. The computer will display the name of all the students as well as the overall average of the three subject marks that are in the data list.
+2. The computer will display those students that earned greater than 80% in history class.
+3. The computer will display only those students that passed ALL of their courses.
+4. The computer will display the those students that passed either Math or English.
+5. The computer will display those students that failed no courses or just one.
