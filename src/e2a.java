@@ -7,20 +7,12 @@ public class e2a {
 
     public static void main(String[] args) throws IOException {
         Scanner fin = new Scanner(new FileReader("Stuff.txt"));
-        int nLongest = 0, nLetter;
-        Character cLetter;
-        String sWord, sLongest = null;
+        int nWords = 0;
         do {
             String sSentence = fin.nextLine();
             String[] words = sSentence.split(" ");
-            for (int i = 0; i < words.length; i++) {
-                sWord = words[i];
-                if (sWord.length() > nLongest) {
-                    sLongest = sWord;
-                    nLongest = sLongest.length();
-                }
-            }
+            nWords += words.length;
         } while (fin.hasNext());
-        System.out.println("The Longest word is " + sLongest + " and it is " + nLongest + " letters long.");
+        System.out.println(nWords);
     }
 }
